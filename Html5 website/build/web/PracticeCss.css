@@ -1,0 +1,193 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Feb, 2021, 11:18:42 AM
+    Author     : Mahesh
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    width:100%;
+    height:80px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:0 50px 0 100px;
+    background: #000;
+}
+
+.menu i{
+    display: none;
+    
+}
+
+input[type="checkbox"]{
+    display: none;
+    
+}
+
+
+.menu i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+    
+}
+nav ul{
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin:0 5px;
+}
+
+nav ul li a{
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+}
+
+@media(max-width:1000px){
+    nav{
+        padding: 0 40px 0 50px;
+    }
+}
+
+@media(max-width:920px){
+ nav .menu i{
+    display: block;
+  }
+  #click:checked ~ .menu i:before{
+    content: "\f00d";
+  }
+
+nav ul{
+    position: fixed;
+    top:80%;
+    height:100vh;
+    left:-100%;
+    width:100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    
+}
+nav ul li{
+    margin:40px 0;
+    
+}
+nav ul li a{
+    display: block;
+    width:100%;
+    margin-left:-100%;
+    text-align: center;
+}
+}
+
+
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.row{
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+.col-2 img{
+    max-width:100%;
+    padding:50px 0;
+    
+}
+.col-2 h1{
+    font-size:50px;
+    line-height: 60px;
+    margin:25px 0;
+    
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color:#fff;
+    padding:8px 30px;
+    margin:30px 0;
+    border-radius: 30px;
+    transition: background 0.5s
+}
+.btn:hover{
+    background: #563434;
+}
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+        flex-basis:100%;
+    }
+}
+.categories{
+    margin:70px 0;
+    
+}
+.small-container{
+    max-width: 1080px;
+    padding-right: 25px;
+    padding-left:25px;
+    margin:auto;
+    
+}
+.col-3{
+    flex-basis:30%;
+    min-width:250px;
+    margin-bottom: 40px;
+}
+
+.col-3 img{
+    max-width: 100%;
+    transition: transform 0.5s;
+}
+
+.col-3 img:hover{
+    transform:translateY(-5%);
+}
+
+.col-4{
+    flex-basis:25%;
+    min-width:200px;
+    padding:10px;
+    margin-bottom: 20px;
+}
+.col-4 img{
+    width:100%;
+}
+.h1{
+    text-align: center;
+   
+}
